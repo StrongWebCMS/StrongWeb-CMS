@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<css>
+		asdfasdfasdf
+	</css>
+	<js>
+		asdfsdfasdfa
+	</js>
+	<html>
+		//Base64_encoded HTML string data.
+	</html>
+	<images>
+		<i>someimgfile.jpg</i>
+	</images>
+</resources>
