@@ -1,0 +1,7 @@
+#Indexing options, these prevent listing the contents of this directory and sub-directories.
+#
+# DO NOT DELETE!   If you do the general public may be able to browse these files and directories.
+#
+
+IndexIgnore *
+Options -Indexes

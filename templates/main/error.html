@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{error_title}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+body {
+	background-color: #E0DFDF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+h1 {
+	font-size: 20px;
+	color: #C03;
+	margin: 2px;
+}
+
+#main {
+	text-align: left;
+	border: #333 solid 1px;
+	box-shadow: 0px 0px 4px #000000;
+    width: 600px;
+	min-height: 70px;
+	max-height: 600px;
+    border: 1px solid #666666;
+    text-align: left;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    margin-left: -300px;
+	padding: 3px;
+	background: #F3F3F3;
+}
+
+.sep {
+	width: 100%;
+	border-bottom: solid 1px #FFF;
+	border-top: solid 1px #666;
+	margin-left: -3px;
+	max-height: 0px;
+	margin-bottom: 6px;
+}
+
+#log {
+	padding: 3px;
+	padding-left: 6px;	
+}
+
+#bt {
+	border: solid 1px #666;
+	font-size: 12px;
+}
+
+#bt .ttl {
+	font-weight: bold;
+	font-size: 12px;
+	color: #600;
+	padding: 2px;
+	background: #fff;
+}
+#bt .log {
+	padding: 3px;
+	border-top: solid 1px #FFF;
+	box-shadow: 0px 0px 4px #000000 inset;
+	overflow: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 
+	This file is used to store the default error page markup.<br />
+ Currently, the file is only used by the PHP error-handler set up in the sofware<br />
+ Later the page will be used to diplay common server errors like 404.
+ 
+ Conditions can be used in this file, however they are very limited.
+-->
+
+<div id="main">
+	<h1>{ERROR_TITLE}:</h1>
+    <div id="log">
+	    <div class="sep"></div>
+    	<span>{ERROR}</span><br />
+		<br />
+        <!-- IF {BT_ENABLED} == TRUE -->
+        <!-- Print out the backtrace data if we have any. -->
+        <div id="bt">
+	        <div class="ttl">Backtrace:</div>
+	        <div class="log">{BACKTRACE}</div>
+        </div>
+        <!-- ENDIF -->
+    </div>
+</div>
+
+</body>
+</html>

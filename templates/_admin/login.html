@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page_title}</title>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jquery.js"></script>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jqueryUI.js"></script>
+<link rel="stylesheet" href="{TPL_ROOT}jqueryUI.css" />
+{PAGE_HEAD_DATA}
+<style type="text/css">
+
+body,td,th {
+	color: #000;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+body {
+	background-color: #CCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	font-size: 24px;
+	margin-bottom: 16px;
+    margin-top: 12px;
+}
+
+a:link {
+	color: #036;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #036;
+}
+a:hover {
+	text-decoration: underline;
+	color: #06C;
+}
+a:active {
+	text-decoration: none;
+	color: #036;
+}
+
+#main {
+	background: #FFFFFF;
+    border: 1px solid #333333;
+    box-shadow: 0px 0px 30px #303030;
+    height: 380px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+}
+
+#main p {
+	padding-left: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+  <h4>Please Authenticate Yourself</h4>
+  <p>Provide the requested information below, and click "Log In" to authenticate.<br />
+  If you do not have a user account with access to this area you will be redirected to the home page.</p>
+  <br />
+  {LOGIN_FORM}
+</div>
+
+</body>
+</html>

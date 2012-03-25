@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page_title}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #036;
+}
+a:visited {
+	color: #036;
+}
+a:hover {
+	color: #09C;
+}
+a:active {
+	color: #036;
+}
+
+#main {
+	text-align: left;
+	border: #333 solid 1px;
+	box-shadow: 0px 2px 8px #006;
+    width: 800px;
+	min-height: 400px;
+    border: 1px solid #666666;
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -400px;
+	padding: 3px;
+}
+
+#head {}
+#body {}
+#foot {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+</style>
+<script type="text/javascript" language="javascript" src="./jquery-1.6.4.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+
+function ActiveResize()
+{
+	var curMargin = $('#main').css('');	
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="main" >
+  	<div id="head">{page_head}</div>
+    <div id="body">{content}</div>
+    <div id="foot"> Content copyright to Caleb Brumfield. I made it don't steal it! &lt;3</div>
+</div>
+
+</body>
+</html>

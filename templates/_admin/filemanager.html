@@ -1,0 +1,47 @@
+<h4>Manage Website File-Storage</h4>
+<p>The File-Storage Manager allows for on-server storage of files without the direct need of an FTP server.<br />
+You can upload new files, remove, rename, or link-to existing files, as well as create and delete whole directories.<br />
+You cannot use the following characters when adding or renaming files or directories:
+<span style="font-family:'Times New Roman', Times, serif"> \ / : * ? " &gt; &lt; | ;</span>
+
+</p>
+<noscript>
+  <div class="error_msg">
+    To use the File Manager you must enable JavaScript in your browser!<br />
+    Please change your browser settings and reload the page.
+  </div>
+</noscript>
+<div id="file_manager">
+<table id="fs_ctrl_bar" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="middle" width="32"><a onclick="fs_addFile();" href="#"><img src="{TPL_IMAGES}add_file.png" alt="[Add File]" title="Add/Upload a new File" width="26" height="26" /></a></td>
+    <td align="left" valign="middle" width="32"><a onclick="fs_addDir();" href="#"><img src="{TPL_IMAGES}add_dir.png" alt="[Create Directory]" title="Create a new Directory" width="26" height="26" /></a></td>
+    <td align="left" valign="middle">
+    <input name="file_path" type="text" id="file_path_box" value="/" size="48" />
+    <input type="button" id="file_uri_button" accesskey="g" onclick="fs_gotoFileURI();" value="Go" />
+    </td>
+  </tr>
+</table>
+<div id="file_list_div">
+{FILE_TABLE}
+</div>
+</div>
+
+<div style="display:none; visibility:hidden;">
+<div id="fs_delete_dir_dialog" title="Delete this Directory?">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0px 7px 20px 0px;"></span>The directory<span id="dir_name"></span> and any files contained within it will be permanently deleted. Are you sure?</p>
+</div>
+<div id="fs_delete_file_dialog" title="Delete this File?">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0px 7px 20px 0px;"></span>The file<span id="file_name"></span> will be permanently deleted. Are you sure?</p>
+</div>
+
+<div id="fs_addfile_dialog" title="Upload a new File:">
+	<form id="fs_upload_form" action="/admin.php?admin_panel=filemanager&ajax=upload" method="post" enctype="multipart/form-data">
+	  <label>New File: <input id="fs_up_0" name="upload[]" type="file" /></label><br />
+	</form>
+	<!--iframe id="fs_upload_form" src="{TPL_ROOT}fs_upload_frame.html" scrolling="no" frameborder="0" height="100%" width="100%"></iframe -->
+</div>
+<div id="fs_adddir_dialog" title="Add a new Directory:">
+	<p>Folder Name: <input id="fs_adddir_name" type="text" value="" /></p>
+</div>
+</div>

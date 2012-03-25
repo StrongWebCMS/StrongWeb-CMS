@@ -1,0 +1,284 @@
+
+
+body,td,th {
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+img {
+	border: 0px none;
+}
+
+h4 {
+	font-size: 24px;
+	margin-bottom: 16px;
+	margin-top: 12px;
+}
+
+a:link {
+	color: #036;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #036;
+}
+a:hover {
+	text-decoration: underline;
+	color: #06C;
+}
+a:active {
+	text-decoration: none;
+	color: #036;
+}
+
+#main {
+	position: absolute;
+	left: 50%;
+	width: 980px;
+	margin-left: -490px;
+	border: #333 solid 1px;
+	border-bottom: 0px;
+	border-top: 0px;
+	box-shadow: 0px 0px 30px #303030;
+	bottom: 0px;
+	top: 0px;
+	height: 100%;
+}
+
+#header {
+	height: 64px;
+	background: #069;
+	color: #000000;
+}
+#header .text {
+	top: 12px;
+	position: relative;
+	font-size: 26px;
+	text-shadow: 0px 0px 3px #FEFEFE;
+	padding-left: 18px;
+	width: 800px;
+}
+#header .user_links {
+	position: relative;
+	right: 5px;
+	text-align: right;
+	top: -26px;
+}
+#header a {
+	line-height: 20px;
+}
+#header a:link {
+	color: #CCC;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000000;
+}
+#header a:visited {
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000000;
+	color: #CCC;
+}
+#header a:hover {
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000000;
+	color: #9CF;
+}
+#header a:active {
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000000;
+	color: #CCC;
+}
+
+#nav {
+	width: 210px;
+	border-right: 1px solid #069;
+}
+
+#nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+#nav ul a {
+	text-decoration: none;
+}
+#nav ul li {
+	list-style: none outside none;
+	padding: 1px;
+	padding-left: 4px;
+	border-left: #fff 4px solid;
+}
+#nav ul li:hover {
+	list-style: none outside none;
+	padding: 1px;
+	padding-left: 4px;
+	border-left: 4px solid #09F;
+	cursor: pointer;
+}
+#nav ul li:hover a, #nav ul li:hover a:visited, #nav ul li:hover a:link, #nav ul li:hover a:active, #nav ul li:hover a:hover {
+	color: #06C;
+}
+
+#nav ul li.heading {
+	background: #069;
+	color: #EFEFEF;
+	text-align: center;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	text-shadow: 0px 0px 12px #000;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-left: 0px;
+}
+#nav ul li:hover.heading {
+	border: 0px;
+}
+#nav ul li.active {
+	list-style: none outside none;
+	padding: 1px;
+	padding-left: 4px;
+	border-left: #BDF 4px solid;
+	background: #DEF;
+}
+#nav ul li:hover.active {
+	list-style: none outside none;
+	padding: 1px;
+	padding-left: 4px;
+	border-left: #09F 4px solid;
+	background: #DEF;
+}
+
+#body {
+	width: 780px;
+	border-left: 1px solid #06C;
+	padding-top: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 24px;
+}
+#body p {
+	padding-left: 10px;
+}
+
+table.linklist {
+	width: 100%;
+	border: #09C solid 1px;
+}
+table.linklist th {
+	background: #09C;
+	color: #000;
+	font-weight: bold;
+	padding-bottom: 2px;
+	padding-left: 14px;
+}
+table.linklist td {
+	padding: 3px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+table.linklist tr.lite {
+	background: #BEF;
+}
+table.linklist tr.dark {
+	background: #FFF /* #66C1FF; */
+}
+
+/*file manager css*/
+#file_manager a {
+	opacity: 0.75;
+	cursor: pointer;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+#file_manager a:hover {
+	opacity: 1;
+	cursor: pointer;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.fs_label {
+	background: none;
+	border: 0px none;
+	cursor: default;
+	width: 100%;
+}
+.fs_label_active {}
+
+.filelist {
+	width: 100%;
+	border: #09C solid 1px;
+}
+.filelist th {
+	background: #09C;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: bold;
+	padding: 2px;
+	height: 24px; 
+}
+.filelist th.iconspace
+{
+	width: 34px;
+	padding: 0px;
+	text-align: center;
+}
+.filelist th.options
+{
+	width: 150px;
+	padding-right: 6px;
+	text-align: center;
+}
+
+.filelist td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 32px;}
+.filelist tr.lite {
+	background: #BEF;
+}
+.filelist tr.dark {
+	background: #FFF /* #66C1FF; */
+}
+#file_uri_form {
+	width: 360px;
+}
+#fs_ctrl_bar {
+	height: 32px;
+}
+
+span.good {
+	color: #009933;
+}
+span.bad {
+	color: #CC0000;
+}
+
+.error_msg {
+	border: 1px solid #F99;
+    margin: 3px;
+    padding: 3px;
+	padding-left: 12px;
+	background: #FCC;
+	font-size: 12px;
+}
+
+
+#footer {
+	border-top: 1px solid #0066CC;
+	bottom: 0;
+	clear: both;
+	font-size: 9px;
+	height: 20px;
+	text-align: center;
+	width: 100%;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{PAGE_TITLE}</title>
+<style type="text/css">
+body,td,th {
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #036;
+}
+a:visited {
+	color: #036;
+}
+a:hover {
+	color: #09C;
+}
+a:active {
+	color: #036;
+}
+
+#main {
+	text-align: left;
+	border: #333 solid 1px;
+	box-shadow: 0px 2px 8px #006;
+    width: 800px;
+	min-height: 400px;
+    border: 1px solid #666666;
+    text-align: left;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -400px;
+	padding: 3px;
+}
+
+#head {
+	clear: both;
+}
+#nav {
+	float: left;
+	width: 150px;
+}
+#nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+#nav ul li {
+	list-style: none outside none;
+	padding: 2px;
+}
+#nav ul li.header {
+	list-style: none outside none;
+	padding: 2px;
+	font-weight: bold;
+	font-size: 16px;
+	background: #996;
+}
+
+
+#body {
+	float: right;
+	width: 600px;
+}
+#foot {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	clear: both;
+}
+
+</style>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jquery.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+
+function navClick( url )
+{
+	document.location = url;
+}
+
+//-->
+</script>
+</head>
+
+<body>
+
+<div id="main" >
+  	<div id="head">Header content here....</div>
+    <div id="nav">
+      <ul>
+        <li class="header">Navigation:</li>
+        {NAV_LINK_LIST}
+      </ul>
+    </div>
+    <div id="body">{content}</div>
+    <div id="foot"> Content copyright to Caleb Brumfield. &copy; 2011. &nbsp; Loaded in: {PAGE_LOAD_TIME}</div>
+</div>
+
+</body>
+</html>

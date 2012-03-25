@@ -1,0 +1,12 @@
+<h4>Provide Access to a Database Server</h4>
+<p>This page will test your database settings to ensure they work before attempting to install the system.</p>
+<!-- IF {bool:DB_CONNECTION_STATUS} != 0 -->
+<div class="msgBox" style="padding:3px;">
+<strong><span class="bad">The Connection Failed</span></strong> and returned this error:<br />
+ &nbsp; <em style="font-size:13px;">{DB_CONNECTION_STATUS}</em><br />
+<br />
+Please try again.
+<div>
+<br />
+<!-- ENDIF -->
+{DATABASE_ACCESS_FORM}

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{page_title}</title>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jquery.js"></script>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jquery.form.js"></script>
+<script type="text/javascript" language="javascript" src="{TPL_ROOT}jqueryUI.js"></script>
+<link rel="stylesheet" href="{TPL_ROOT}jqueryUI.css" />
+{PAGE_HEAD_DATA}
+
+</head>
+
+<body>
+<table summary="Administration and configrations panel table" id="main" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" align="left" valign="top" id="header">
+    <div class="text">StrongWeb Administration Panel</div>
+    <div class="user_links">
+      <!-- IF {S_LOGGED_IN} == 1 -->
+      <a href="/index.php?action=logout">Log Out</a><br />
+      <!-- ENDIF -->
+      <a href="{SITE_URL}" target="_blank">Go to Index Page</a>
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" id="nav">
+    <ul>
+      <li class="heading">Sections:</li>
+      {SECTION_LINKS}
+      <!-- IF {ADDON_COUNT} >= 1 -->
+      <li class="heading">Addons:</li>
+      {ADDON_LINKS}
+      <!-- ENDIF -->
+    </ul>
+    </td>
+    <td align="left" valign="top" id="body">
+      {content}
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" id="footer"> <a href="https://github.com/Cheshire121/StrongWeb-CMS" target="_blank">StrongWeb CMS</a> maintained by <a href="http://cbrumfield.x10.bz" target="_blank">Caleb Brumfield</a>, licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPLv3</a>. Loaded in: {PAGE_LOAD_TIME}</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
