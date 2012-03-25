@@ -1,0 +1,85 @@
+Software Name:  StrongWeb CMS
+Version #:      0.4-Alpha
+Description:  
+      Originally aimed at simply making a helpful GUI that 
+  could aid people in managing their "Website" whatever that 
+  may have meant.  This software is built with the intentions
+  of making a framework that is robust yet simplistic while 
+  not being too constrained.  
+      
+      As a Developer, I want any programmer to easily be able 
+  to expand this software while worrying not about how the 
+  software maintains the ease of use seen in many CMS like 
+  Wordpress or Drupal.
+    
+
+This file contains all you need to know about this software; 
+from its requirments and how to install it to your hosting 
+server, down to the license under which it is released.
+
++-------------------------------------------------------------+
+|                   Software Specifications                   |
++-------------------------------------------------------------+
+This software was built using various OpenSource libraries.
+These software libraries are:
+  ADOdb      - http://adodb.sourceforge.net/
+  PFBC       - http://code.google.com/p/php-form-builder-class/
+  PHPass     - http://www.openwall.com/phpass/
+  libMail    - http://lwest.free.fr/doc/php/lib/index.php3?page=mail&lang=en
+
+Requirements to run this software are:
+At least a PHP and MySQL enabled hosting service running PHP 5.3.0 or later and MySQL 5.1.36 or later.
+Optional requirements:
+ - mod_rewrite enabled  allowing for SEO URLs.
+
+The software is intended to work with the following components:
+PHP 5.3.x and up.
+MySQL, Postgre, Oracle, SQLite, LDAP, Firebird/InterBase (Only one of these per installation.)
+Apache Webserver
+Linux/Unix and Windows OS'es
+  
++-------------------------------------------------------------+
+|                   Software Installation                     |
++-------------------------------------------------------------+
+1.) First download the latest version from here: 
+        https://github.com/Cheshire121/StrongWeb-CMS/zipball/master
+
+2.) Once downloaded extract or unzip the archive to a directory 
+    on your desktop or where ever.
+
+3.) Next upload the files you extracted to the root of your hosting 
+    directory.  Do NOT upload the whole folder, unless you intend
+    to configure your host and the software appropriately.
+
+4.) Now navigate with a Web-browser to the index page of your website.
+    If the software was uploaded correctly the software should 
+    automatically start the installation process.
+    
+5.) Provide the requested information about your hosting 
+    configuration and database connection information.
+    Once you complete the connection to your database the software
+    will begin to populate your database with some default tables
+    and records.
+    
+6.) Your Website is now a StrongWeb-site, congradulations!
+
+
++-------------------------------------------------------------+
+|                   Licensed Under: GPL v3                    |
++-------------------------------------------------------------+
+
+    StrongWeb CMS - Dynamic Website Content Management System.
+    Copyright (C) 2011 to Caleb Brumfield
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 3 as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+    and <http://www.gnu.org/licenses/gpl-3.0.html>.
